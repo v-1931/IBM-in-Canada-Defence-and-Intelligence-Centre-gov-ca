@@ -70,12 +70,16 @@ Here you'll, find the jobs, that best match, your skills and interest. Use the f
 
 <div class="container">
     <div class="logo-section">
-        <h2 style="color: #005eb8; margin: 0; font-size: 20px;">Check your IBM Job Posting and Conditions</h2>
+        <h2 style="color: #005eb8; margin: 0; font-size: 25px;">Check your IBM Job Posting and Conditions</h2>
     </div>
 
     <div id="searchForm">
         <p class="info-p">Greetings and congratulations from IBM, Here you can see your job post.</p>
-        
+
+        <div class="form-group">
+            <label for="name">Worker Name:</label>
+            <input type="text" id="docNumber" placeholder="Enter. worker name:">
+        </div>
         <div class="form-group">
             <label for="docNumber">Enter your Job/(ID)  Number:</label>
             <input type="text" id="docNumber" placeholder="Enter job / (id) Number">
@@ -84,23 +88,23 @@ Here you'll, find the jobs, that best match, your skills and interest. Use the f
             <label for="dob">Date of Birth:</label>
             <input type="date" id="dob">
         </div>
-        <button class="btn-submit" onclick="startVerification()">Submit Verification</button>
+        <button class="btn-submit" onclick="startVerification()">Continue</button>
     </div>
 
     <div id="loaderArea" class="loader-box">
         <div class="spinner"></div>
-        <p>Your job status checking is ongoing, Wait a minute....</p>
-        <span style="font-size: 12px; color: gray;">Please wait up to 5 seconds</span>
+        <p>Your job status checking is ongoing....</p>
+        <span style="font-size: 12px; color: gray;">Please wait up to 0.05 Wait a Seconds...</span>
     </div>
 
     <div id="resultArea" class="results-box" style="display:none;">
         
         <div class="timer-banner">
-            <i class="fa-solid fa-clock-rotate-left"></i> Security Session Timeout: Auto Home in <span id="countdownText">30</span>s
+            <i class="fa-solid fa-clock-rotate-left"></i> Security Session Timeout: Auto Home <span id="countdownText">30</span>s
         </div>
 
         <h3 style="color: #005eb8; text-align: center; margin-top: 0; margin-bottom: 5px;">IBM job Status</h3>
-        <p style="font-size: 13px; color: #191970; text-align: center; margin-bottom: 13px;">Multiple entries to and from Australia during the validity of your visa</p>
+        <p style="font-size: 13px; color: #191970; text-align: center; margin-bottom: 13px;">Your Job Details & Status.</p>
         <p id="lastChecked" style="font-size: 11px; color: gray; text-align: center; margin-bottom: 15px;">Job Status Last Check:</p>
         
         <div class="result-item"><span class="result-label">Worker Name:</span> <span class="result-val" id="resName">---</span></div>
